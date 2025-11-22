@@ -26,4 +26,8 @@ provider "azurerm" {
 resource "azurerm_resource_group" "example" {
   name     = "test-github-rg"
   location = "australiaeast"
+  tags = {
+    Environment = "test"
+  }
 }
+

@@ -2,6 +2,11 @@ name: Terraform Manual Workflow
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'main.tf'
+      - 'variables.tf'
+      - 'outputs.tf'
 
 permissions:
   id-token: write

@@ -29,5 +29,6 @@ resource "azurerm_resource_group" "example" {
 
   tags = {
     Environment = "dev"
+    created_by  = "abipriya001"
   }
 }
